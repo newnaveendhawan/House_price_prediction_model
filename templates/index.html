@@ -72,7 +72,7 @@
                     <form method="post" accept_charset="utf-8">
                         <div class="row-custom">
                             <div class="col-md-3 form-group">
-                                <label class="form-label"><img src="{{ url_for('static', filename='image/location_png.png') }}" alt="Location Icon" class="form-icon"> Select the Location:</label>
+                                <label class="form-label"><img src="{{ url_for('static', filename='Image/location_png.png') }}" alt="Location Icon" class="form-icon"> Select the Location:</label>
                                 <select class="form-control" id="location" name="location" required>
                                     {% for location in locations %}
                                         <option value="{{location}}">{{location}}</option>
@@ -80,15 +80,15 @@
                                 </select>
                             </div>
                             <div class="col-md-3 form-group">
-                                <label class="form-label"><img src="{{ url_for('static', filename='image/bhk.png') }}" alt="bhk Icon" class="form-icon">Enter the BHK:</label>
+                                <label class="form-label"><img src="{{ url_for('static', filename='Image/bhk.png') }}" alt="bhk Icon" class="form-icon">Enter the BHK:</label>
                                 <input type="text" class="form-control" id="bhk" name="bhk" placeholder="Enter BHK">
                             </div>
                             <div class="col-md-3 form-group">
-                                <label class="form-label"><img src="{{ url_for('static', filename='image/bathroom.png') }}" alt="bathroom Icon" class="form-icon">Enter number of bathrooms:</label>
+                                <label class="form-label"><img src="{{ url_for('static', filename='Image/bathroom.png') }}" alt="bathroom Icon" class="form-icon">Enter number of bathrooms:</label>
                                 <input type="text" class="form-control" id="bath" name="bath" placeholder="Enter Number of bathrooms">
                             </div>
                             <div class="col-md-3 form-group">
-                                <label class="form-label"><img src="{{ url_for('static', filename='image/squarefeet.png') }}" alt="Square feet Icon" class="form-icon">Enter the Square feet:</label>
+                                <label class="form-label"><img src="{{ url_for('static', filename='Image/squarefeet.png') }}" alt="Square feet Icon" class="form-icon">Enter the Square feet:</label>
                                 <input type="text" class="form-control" id="total_sqft" name="total_sqft" placeholder="Enter the Area in Square feet">
                             </div>
                         </div>
