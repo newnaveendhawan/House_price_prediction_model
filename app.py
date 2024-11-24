@@ -1,12 +1,16 @@
 # flask, scikit-learn, pandas, pickle-mixin, flask_cors
 import pandas as pd
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 import pickle
 import numpy as np
 
 app = Flask(__name__)
 data = pd.read_csv("Cleaned_data.csv")
 pipe = pickle.load(open("RidgeModel.pkl",'rb'))
+
+@app.route('/static/<path:filename>')
+def static_files(filename):
+    return send_from_directory('static', filename)
 
 @app.route('/')
 def index():
